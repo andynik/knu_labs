@@ -28,7 +28,9 @@
       
      2. В появившемся окне копируем команду типа такой:
      
-        `gcloud compute --project "optimum-reactor-187009" ssh --zone "us central1-a" "ubuntu-xenial-8"`
+        ```
+        gcloud compute --project "optimum-reactor-187009" ssh --zone "us central1-a" "ubuntu-xenial-8"
+        ```
       
      3. Запускаем на своём компе Google Cloud SDK Shell (см. Примечания) и выполняем её там. Откроется консоль виртуалки.
      
@@ -37,7 +39,9 @@
       
 6. В него мы вводим команду
 
-   `wget --no-check-certificate 'https://docs.google.com/uc export=download&id=FILEID' -O FILENAME`
+   ```
+   wget --no-check-certificate 'https://docs.google.com/uc export=download&id=FILEID' -O FILENAME
+   ```
 
    где вместо FILEID подставляем id из пункта 4, FILENAME – какое-нибудь слово – имя файла, как он будет сохранён на виртуалке.
 
@@ -82,15 +86,21 @@ N. Ах, да! И не забудьте выключить его нахрен. 
 
 1. Открываем консоль, там вводим
 
-   `python -V`
+   ```
+   python -V
+   ```
 
 2. Должно вернуть версию Python 2.7.x. Потом пишем
 
-   `curl https://sdk.cloud.google.com | bash`
+   ```
+   curl https://sdk.cloud.google.com | bash
+   ```
 
 3. Устанавливаем. И проверяем работоспособность gcloud строчкой
 
-   `/Users/USERNAME/Desktop/google-cloud-sdk/bin/gcloud init`
+   ```
+   /Users/USERNAME/Desktop/google-cloud-sdk/bin/gcloud init
+   ```
 
 4. После этого вводим команду из пункта 5-b выше. В ответ на что будет предложено установить пароль (5-значный). Делаем это.
 
