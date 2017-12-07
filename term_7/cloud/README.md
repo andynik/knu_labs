@@ -11,12 +11,9 @@
     ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/1.png 'COMPUTE > Compute Engine > VM instances')
 
 2. Выбираем Create instance. Там всё оставляем по дефолту, меняем только:
-
-  * 1 vCPU → 4 vCPU
-
-  * Boot disk: Ubuntu 16.04 LTS
-
-  * ✓ Allow HTTP traffic
+   * 1 vCPU → 4 vCPU
+   * Boot disk: Ubuntu 16.04 LTS
+   * ✓ Allow HTTP traffic
    
 3. Нажимаем Create. Виртуалка создана!
 
@@ -81,6 +78,33 @@ N. Ах, да! И не забудьте выключить его нахрен. 
 
 Найти Cloud SDK можно здесь. На винде дальнейшая установка стандартная. Для яблочников с macOS установка описана ниже.
 
-# _Как установить Cloud SDK на MacOS_
+## _Как установить Cloud SDK на MacOS_
 
-(soon)
+1. Открываем консоль, там вводим
+
+   `python -V`
+
+2. Должно вернуть версию Python 2.7.x. Потом пишем
+
+   `curl https://sdk.cloud.google.com | bash`
+
+3. Устанавливаем. И проверяем работоспособность gcloud строчкой
+
+   `/Users/USERNAME/Desktop/google-cloud-sdk/bin/gcloud init`
+
+4. После этого вводим команду из пункта 5-b выше. В ответ на что будет предложено установить пароль (5-значный). Делаем это.
+
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/9.jpg 'прикольное отображение ключа в консоли')
+   
+   Затем тут же будет предложено пройти авторизацию, вводим наш пароль из предыдущего пункта, вас перенаправит на страницу гугл-аккаунта, где будет запрошено разрешение на доступ к нему – разрешаем.
+   
+5. Будет написано, что вы залогинились [ваша почта], и предложено выбрать проект. Выберите тот, в котором создавали ВМ.
+
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/10.jpg 'Victory!')
+   
+   Конфигурацию пропускаем. Видим победную строку.  
+   Консоль виртуалки при этом откроется в консоле мака (ваше имя будет подсвечено зелёным).
+   
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/10.jpg 'наканецта')
+   
+6. Далее переходим к пункту 6 из основой части гайда.
