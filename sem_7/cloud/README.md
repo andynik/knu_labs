@@ -76,7 +76,7 @@
 
 N. Ах, да! И не забудьте выключить его нахрен. А то придётся заводить новый ак с 300$.
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/01.jpg 'теперь можно пойти спокойно пожрать')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/08.jpg 'теперь можно пойти спокойно пожрать')
 
 # Примечания
 
@@ -110,11 +110,11 @@ N. Ах, да! И не забудьте выключить его нахрен. 
    
 5. Будет написано, что вы залогинились [ваша почта], и предложено выбрать проект. Выберите тот, в котором создавали ВМ.
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/p02.png 'Victory!')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/n02.png 'Victory!')
    
    Конфигурацию пропускаем. Видим победную строку.  
    Консоль виртуалки при этом откроется в консоле мака (ваше имя будет подсвечено зелёным).
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/03.png 'наканецта')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/n03.png 'наканецта')
    
 6. Далее переходим к пункту 6 из основой части гайда.
