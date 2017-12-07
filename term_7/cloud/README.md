@@ -94,17 +94,17 @@ N. Ах, да! И не забудьте выключить его нахрен. 
 
 4. После этого вводим команду из пункта 5-b выше. В ответ на что будет предложено установить пароль (5-значный). Делаем это.
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/9.jpg 'прикольное отображение ключа в консоли')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/9.png 'прикольное отображение ключа в консоли')
    
    Затем тут же будет предложено пройти авторизацию, вводим наш пароль из предыдущего пункта, вас перенаправит на страницу гугл-аккаунта, где будет запрошено разрешение на доступ к нему – разрешаем.
    
 5. Будет написано, что вы залогинились [ваша почта], и предложено выбрать проект. Выберите тот, в котором создавали ВМ.
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/10.jpg 'Victory!')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/10.png 'Victory!')
    
    Конфигурацию пропускаем. Видим победную строку.  
    Консоль виртуалки при этом откроется в консоле мака (ваше имя будет подсвечено зелёным).
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/10.jpg 'наканецта')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/11.png 'наканецта')
    
 6. Далее переходим к пункту 6 из основой части гайда.
