@@ -8,7 +8,7 @@
 После того как аккаунт создан, необходимо забабахать виртуалку.
 1. Переходим на страницу с виртуальными машинами (ВМ):
 
-    ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/1.png 'COMPUTE > Compute Engine > VM instances')
+    ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/01.png 'COMPUTE > Compute Engine > VM instances')
 
 2. Выбираем Create instance. Там всё оставляем по дефолту, меняем только:
    * 1 vCPU → 4 vCPU
@@ -19,12 +19,12 @@
 
 4. Теперь загружаем на Google Drive свой `cpp`шник, открываем к нему доступ по ссылке и запоминаем его `id`шник.
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/2.jpg 'id файла')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/02.jpg 'id файла')
    
 5. После этого возвращаемся на страничку ВМ и нажимаем на SSH в строке с витруалкой.
    Если выдаёт **Warnings**, то
      1. Нажимаем на стрелочку справа от SSH, где выбираем  
-        ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/3.png)
+        ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/03.png)
       
      2. В появившемся окне копируем команду типа такой:
      
@@ -34,7 +34,7 @@
       
      3. Запускаем на своём компе Google Cloud SDK Shell (см. Примечания) и выполняем её там. Откроется консоль виртуалки.
      
-        ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/4.png 'PuTTY')
+        ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/04.png 'PuTTY')
       
       
 6. В него мы вводим команду
@@ -63,20 +63,20 @@
    
 9. Если ошибок доселе не было, то можно поиграться, указывая разное кол-во процессов:
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/5.png 'amma parallel proger')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/05.png 'amma parallel proger')
    
    Виден прирост в скорости при увеличении кол-ва задействованных процессов.  
    Ещё можно посмотреть, как загружается клауд:
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/6.png 'клауд потеет')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/06.png 'клауд потеет')
    
    И отметить, что подробная конфигурация гугловсих машин, увы, скрыта:
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/7.png)
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/07.png)
 
 N. Ах, да! И не забудьте выключить его нахрен. А то придётся заводить новый ак с 300$.
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/8.jpg 'теперь можно пойти спокойно пожрать')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/01.jpg 'теперь можно пойти спокойно пожрать')
 
 # Примечания
 
@@ -104,17 +104,17 @@ N. Ах, да! И не забудьте выключить его нахрен. 
 
 4. После этого вводим команду из пункта 5-b выше. В ответ на что будет предложено установить пароль (5-значный). Делаем это.
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/9.png 'прикольное отображение ключа в консоли')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/n01.png 'прикольное отображение ключа в консоли')
    
    Затем тут же будет предложено пройти авторизацию, вводим наш пароль из предыдущего пункта, вас перенаправит на страницу гугл-аккаунта, где будет запрошено разрешение на доступ к нему – разрешаем.
    
 5. Будет написано, что вы залогинились [ваша почта], и предложено выбрать проект. Выберите тот, в котором создавали ВМ.
 
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/10.png 'Victory!')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/p02.png 'Victory!')
    
    Конфигурацию пропускаем. Видим победную строку.  
    Консоль виртуалки при этом откроется в консоле мака (ваше имя будет подсвечено зелёным).
    
-   ![alt text](https://github.com/andynik/knu_labs/blob/master/term_7/cloud/photos/11.png 'наканецта')
+   ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/03.png 'наканецта')
    
 6. Далее переходим к пункту 6 из основой части гайда.
