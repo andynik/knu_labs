@@ -32,7 +32,7 @@
         gcloud compute --project "optimum-reactor-187009" ssh --zone "us central1-a" "ubuntu-xenial-8"
         ```
       
-     3. Запускаем на своём компе Google Cloud SDK Shell (см. Примечания) и выполняем её там. Откроется консоль виртуалки.
+     3. Запускаем на своём компе Google Cloud SDK Shell (см. [Примечания](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/README.md#Примечания)) и выполняем её там. Откроется консоль виртуалки.
      
         ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/04.png 'PuTTY')
         
