@@ -41,7 +41,7 @@
 6. В него мы вводим команду
 
    ```
-   wget --no-check-certificate 'https://docs.google.com/uc export=download&id=FILEID' -O FILENAME
+   wget --no-check-certificate 'https://docs.google.com/uc&export=download&id=FILEID' -O FILENAME
    ```
 
    где вместо FILEID подставляем id из пункта 4, FILENAME – какое-нибудь слово – имя файла, как он будет сохранён на виртуалке.
