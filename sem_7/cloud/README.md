@@ -182,7 +182,8 @@ mpirun -np 4 --hostfile=hostfile ./name
 
 ![alt text](https://github.com/andynik/knu_labs/blob/master/sem_7/cloud/images/17.png)
 
-Ну вот и всё, осталось только показать лабу :)
+Ну вот и всё, осталось только показать лабу :) И, конечно, не забудьте выключить все ВМ!
+
 
 
 # Примечания
