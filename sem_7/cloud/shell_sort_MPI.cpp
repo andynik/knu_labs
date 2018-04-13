@@ -1,3 +1,5 @@
+// this code provided by Leonid Gotsalyuk
+
 #include <mpi.h>
 #include <iostream>
 #include <algorithm>
