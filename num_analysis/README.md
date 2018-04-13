@@ -1,3 +1,5 @@
 ## Numerical Analysis projects
 
-**lab3:** Finite Difference Heat Equation
+Lab # | Description
+--- | ---
+3 | Finite Difference Heat Equation
