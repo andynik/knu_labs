@@ -9,4 +9,4 @@ lab3<sup>[[1]](#myfootnote1)</sup>:
 * Monopoly profit/price (of resources) and the volume of production
 
 ---
-<a name="myfootnote1"><sup>1</sup></a> Mostly was provided by @osipyonok.
+<a name="myfootnote1"><sup>1</sup></a> Mostly was provided by [@osipyonok](https://github.com/osipyonok)
