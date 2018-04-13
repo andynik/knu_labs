@@ -1,4 +1,4 @@
-## Mathematical modeling of economics and ecology processes
+## Mathematical Modeling in Economics, Ecology and the Environment
 
 **lab1:** Supply & Demand functions. Equilibrium
 
