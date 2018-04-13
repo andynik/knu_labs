@@ -1,4 +1,4 @@
-// this code provided by Leonid Gotsalyuk
+// this code was provided by Leonid Gotsalyuk
 
 #include <mpi.h>
 #include <iostream>
