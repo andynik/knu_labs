@@ -37,7 +37,7 @@ append([Head|Tail], List, [Head|Rest]) :-
 % L = [1, 2, 3, 4, 5, 6]
 
 
-%%% to remove element from every list in list
+%%% to remove an element from every list in set of lists
 
 del_el(X, [X|Z], Y) :-
     del_el(X, Z, Y).
