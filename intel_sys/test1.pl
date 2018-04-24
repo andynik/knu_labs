@@ -1,4 +1,5 @@
 % use SWI-Prolog (https://swish.swi-prolog.org) for compile
+% more examples in https://pro-prof.com/archives/845
 
 
 %%% to reverse a list
