@@ -1,4 +1,5 @@
-% use SWI-Prolog (https://swish.swi-prolog.org) for compile
+% variants 3 & 4
+% use SWI-Prolog (https://swish.swi-prolog.org) for compiling
 
 
 %%% var #3
@@ -86,7 +87,7 @@ quicksort([Head|Tail], Sorted) :- pivot(Head, Tail, List1, List2), quicksort(Lis
 % S = [0, 1, 2, 5, 6]
 
 
-%%% zipper for three lists (give 0.5 out of 1 points for the task)
+%%% zipper for three lists (counting for 0.5 out of 1 points in the task)
 
 X = [5, 3, [4, 2], 1]
 
