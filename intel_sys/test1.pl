@@ -1,5 +1,12 @@
 % Head start for Prolog test #1
 % use SWI-Prolog (https://swish.swi-prolog.org) for compiling
+
+
+% Solutions provided for
+% 1. reversing a list
+% 2. zipper for two lists
+% 3. appending two lists
+% 4. removing an element from every list in set of lists
 % find more examples in https://pro-prof.com/archives/845
 
 
@@ -28,7 +35,7 @@ zip([X|Xs], [Y|Ys], [X,Y|Zs]) :- zip(Xs,Ys,Zs).
 % X = [1, 4, 2, 5, 3, 6]
 
 
-%%% to append two lists
+%%% two append two lists
 
 append([], List, List).
 append([Head|Tail], List, [Head|Rest]) :-
@@ -38,7 +45,7 @@ append([Head|Tail], List, [Head|Rest]) :-
 % L = [1, 2, 3, 4, 5, 6]
 
 
-%%% to remove an element from every list in set of lists
+%%% to remove an element from every list in a set of lists
 
 del_el(X, [X|Z], Y) :-
     del_el(X, Z, Y).
