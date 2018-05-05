@@ -1,3 +1,4 @@
+% Head start for Prolog test #1
 % use SWI-Prolog (https://swish.swi-prolog.org) for compiling
 % find more examples in https://pro-prof.com/archives/845
 
