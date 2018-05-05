@@ -1,4 +1,4 @@
-% variants 3 & 4
+% Variants 3 & 4 for Prolog test #2
 % use SWI-Prolog (https://swish.swi-prolog.org) for compiling
 
 
