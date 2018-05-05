@@ -106,7 +106,7 @@ poly([A|TailMultipliers], X, B):-
   poly(TailMultipliers, X, NextB),
   B is A + NextB*X.
 
-% a1 + a2 * x + a3 * x^2
-% 1 + 2 * x + 3 * x^2, x=2
+% a1 + a2*x + a3*x^2
+%  1 +  2*x +  3*x^2, x=2
 ?- poly([1, 2, 3], 2, R)
 % R = 17
