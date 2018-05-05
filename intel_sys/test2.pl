@@ -3,14 +3,14 @@
 
 
 %%% var #3
-% mergesort
-% reverse (list with lists)
-% lcm
+% 1. mergesort
+% 2. reverse (list with lists)
+% 3. lcm
 
 %%% var #4
-% quicksort
-% multizipper
-% polynom outcome in point
+% 1. quicksort
+% 2. multizipper
+% 3. polynom outcome in point
 
 
 %%% mergesort
