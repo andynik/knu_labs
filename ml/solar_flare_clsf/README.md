@@ -9,3 +9,5 @@ The [dataset](http://archive.ics.uci.edu/ml/datasets/Solar+Flare) for the projec
 ![alt text](https://github.com/andynik/knu_labs/blob/master/ml/solar_flare_clsf/images/flares.png 'The solar flares are spectacular')
 
 This is the final task on the ML courses from Samsung at the university.
+
+Check out my [presentation](https://drive.google.com/file/d/1JtTlvnFIduePRXPvyQcIWhqj4UZGjFFI/view?usp=sharing)<sup>ua</sup> for brief overwiew of the project.
