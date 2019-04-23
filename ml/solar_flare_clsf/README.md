@@ -10,4 +10,4 @@ The [dataset](http://archive.ics.uci.edu/ml/datasets/Solar+Flare) for the projec
 
 This is the final task on the ML courses from Samsung at the university.
 
-Check out my [presentation](https://drive.google.com/file/d/1JtTlvnFIduePRXPvyQcIWhqj4UZGjFFI/view?usp=sharing)<sup>ua</sup> for brief overwiew of the project.
+For futher reading check out my [presentation](https://drive.google.com/file/d/1JtTlvnFIduePRXPvyQcIWhqj4UZGjFFI/view?usp=sharing)<sup>ua</sup>.
