@@ -1,3 +1,5 @@
+# Google Vision API sample (no need to use with my_bot.py)
+
 import os, io
 from google.cloud import vision
 import pandas as pd
