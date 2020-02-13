@@ -7,4 +7,4 @@ Requirements for the project:
 - Set up Cloud Vision API ([how to do it](https://www.youtube.com/playlist?list=PL3JVwFmb_BnSLFyVThMfEavAEZYHBpWEd))
 - Python libs: `discord.py`, `google.cloud` and `pandas`
 
-+bonus: [Google Vision API presentation](https://drive.google.com/file/d/1JtTlvnFIduePRXPvyQcIWhqj4UZGjFFI/view?usp=sharing).
++bonus: [Google Vision API presentation](https://drive.google.com/file/d/1qVN6LQmu0iScZAsv4CWAxGtHXnWXo-HZ/view?usp=sharing).
