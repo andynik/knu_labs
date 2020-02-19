@@ -116,7 +116,7 @@ async def on_message(message):
         cnt = 0
         while True:
             if not cnt:
-                await message.channel.send("OK. Ask something about Google Compute Engine. I will help you!")
+                await message.channel.send("OK. Ask me something about Google Compute Engine. I will help you!")
             else:
                 await message.channel.send("Anything else?")
 
