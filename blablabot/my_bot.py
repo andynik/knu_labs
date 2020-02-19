@@ -1,21 +1,17 @@
 from discord.ext import commands
-import os, io
+import os
 from google.cloud import vision
 import pandas as pd
 import random
+import dialogflow_v2 as dialogflow
+from google.api_core.exceptions import InvalidArgument
+
 
 
 def image_text_rec(url):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"ServiceAccountToken.json"
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"VisionAPI_Token.json"
 
     client = vision.ImageAnnotatorClient()
-
-    # FILE_NAME = 'test1.jpg'
-    # FOLDER_PATH = r'D:\Documents\Proga\KNU\sem_12\blablabot\images'
-    # with io.open(os.path.join(FOLDER_PATH, FILE_NAME), 'rb') as image_file:
-    #     content = image_file.read()
-    # image = vision.types.Image(content=content)
-    # response = client.text_detection(image=image)
 
     image = vision.types.Image()
     image.source.image_uri = url
@@ -34,6 +30,33 @@ def image_text_rec(url):
 
     return df
 
+
+def faq(question):
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"DialogflowAPI_Token.json"
+    session_client = dialogflow.SessionsClient()
+
+    DIALOGFLOW_PROJECT_ID = 'blablabot-268010'
+    DIALOGFLOW_LANGUAGE_CODE = 'en'
+    SESSION_ID = 'current-user-id'
+
+    text_to_be_analyzed = question
+
+    session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
+    text_input = dialogflow.types.TextInput(text=text_to_be_analyzed, language_code=DIALOGFLOW_LANGUAGE_CODE)
+    query_input = dialogflow.types.QueryInput(text=text_input)
+
+    try:
+        response = session_client.detect_intent(session=session, query_input=query_input)
+    except InvalidArgument:
+        raise
+
+    print("Query text:", response.query_result.query_text)
+    print("Detected intent:", response.query_result.intent.display_name)
+    print("Detected intent confidence:", response.query_result.intent_detection_confidence)
+    print("Fulfillment text:", response.query_result.fulfillment_text)
+
+    return response.query_result.fulfillment_text
+
 bot = commands.Bot(command_prefix = '.')
 
 profile_info = {}
@@ -43,13 +66,13 @@ async def on_message(message):
     def is_correct(m):
         return m.author == message.author
 
-    if message.author.id == 677077194870226944: #your bot's id
+    if message.author.id == 677077194870226944: # your bot's id
         return
 
     if message.content == "hello":
         await message.channel.send("Hello {0.author.mention} ".format(message))
 
-    elif 'talk' in message.content:
+    elif 'profile' in message.content:
         await message.channel.send("Cool! Tell me more about you")
 
         for info in ['name', 'sex', 'age', 'city']:
@@ -87,6 +110,25 @@ async def on_message(message):
                 break
 
             await message.channel.send(profile_info[about])
+            cnt += 1
+
+    elif 'faq' in message.content:
+        cnt = 0
+        while True:
+            if not cnt:
+                await message.channel.send("OK. Ask something about Google Compute Engine. I will help you!")
+            else:
+                await message.channel.send("Anything else?")
+
+            ans = await bot.wait_for('message', check=is_correct)
+            resp = faq(ans.content)
+
+            if 'enough' in ans.content:
+                await message.channel.send("Alright then")
+                break
+            else:
+                await message.channel.send(resp)
+
             cnt += 1
 
     elif message.attachments:
